@@ -3,181 +3,219 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Anandpur Sahib Tourism</title>
+    <title>Anandpur Sahib Tour Guide</title>
     <link rel="preconnect" href="https://upload.wikimedia.org" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#home" aria-label="Anandpur Sahib Tourism home">
-        <span class="brand-mark" aria-hidden="true"></span>
-        <span>Anandpur Sahib Tourism</span>
+      <a class="brand" href="#home" aria-label="Anandpur Sahib Tour Guide home">
+        <span class="brand-icon" aria-hidden="true">☬</span>
+        <span>
+          <strong>Anandpur Sahib</strong>
+          <small>Tour Guide</small>
+        </span>
       </a>
+
       <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
       </button>
+
       <nav class="site-nav" aria-label="Main navigation">
-        <a href="#places">Places</a>
-        <a href="#itinerary">Itinerary</a>
-        <a href="#plan">Plan</a>
-        <a href="#contact">Contact</a>
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#places">Places to Visit</a>
+        <a href="#packages">Tour Packages</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#travel">Travel Info</a>
+        <a href="#contact">Contact Us</a>
       </nav>
+
+      <a class="phone-button" href="tel:+919876543210">+91 98765 43210</a>
     </header>
 
     <main id="home">
-      <section class="hero" aria-label="Anandpur Sahib travel introduction">
+      <section class="hero" aria-label="Anandpur Sahib welcome">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Virasat-e-Khalsa-Roxy.jpg"
-          alt="Virasat-e-Khalsa museum complex in Anandpur Sahib"
+          src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Takht_keshgarh_Sahib.jpg"
+          alt="Takht Sri Keshgarh Sahib in Anandpur Sahib"
         />
-        <div class="hero-overlay"></div>
+        <div class="hero-shade"></div>
         <div class="hero-content">
-          <p class="eyebrow">Punjab's holy city of bliss</p>
-          <h1>Anandpur Sahib Tourism</h1>
-          <p>
-            Visit the birthplace of the Khalsa, peaceful gurdwaras, historic qilas,
-            and the landmark Virasat-e-Khalsa museum in one memorable trip.
+          <p class="welcome">Welcome To</p>
+          <h1>Anandpur Sahib</h1>
+          <p class="tagline">The Land of Courage, Faith &amp; History</p>
+          <p class="hero-copy">
+            Anandpur Sahib is a holy city of immense historical and spiritual
+            significance in Sikhism. It is the birthplace of Khalsa Panth and a
+            symbol of bravery and sacrifice.
           </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#itinerary">Explore Trip Plans</a>
-            <a class="button ghost" href="#places">See Places</a>
-          </div>
+          <a class="button primary" href="#contact">Plan Your Visit</a>
         </div>
       </section>
 
-      <section class="quick-facts" aria-label="Quick travel facts">
-        <article>
-          <span>Best Time</span>
-          <strong>Oct - Mar</strong>
+      <section class="attractions section" id="places">
+        <div class="section-title">
+          <span></span>
+          <h2>Top Attractions</h2>
+          <span></span>
+        </div>
+
+        <div class="attraction-grid">
+          <article class="attraction-card">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Takht_keshgarh_Sahib.jpg"
+              alt="Takht Sri Keshgarh Sahib"
+            />
+            <div>
+              <h3>Takht Sri Keshgarh Sahib</h3>
+              <p>The holiest shrine in Anandpur Sahib and the sacred seat of Khalsa Panth.</p>
+            </div>
+          </article>
+
+          <article class="attraction-card">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Virasat-e-Khalsa-Roxy.jpg"
+              alt="Virasat-e-Khalsa museum"
+            />
+            <div>
+              <h3>Virasat-e-Khalsa</h3>
+              <p>A museum that beautifully depicts Sikh history, heritage, and sacrifice.</p>
+            </div>
+          </article>
+
+          <article class="attraction-card">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Kesgarh_Sahib.jpg"
+              alt="Historic fort near Anandpur Sahib"
+            />
+            <div>
+              <h3>Anandgarh Fort</h3>
+              <p>A historic fort area that offers a glimpse of Anandpur Sahib's glorious past.</p>
+            </div>
+          </article>
+
+          <article class="attraction-card">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Kesgarh_Sahib.jpg"
+              alt="Naina Devi Temple"
+            />
+            <div>
+              <h3>Naina Devi Temple</h3>
+              <p>A famous hill temple located near Anandpur Sahib and visited by many pilgrims.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="info-strip" id="travel" aria-label="Travel information">
+        <article class="info-card blue">
+          <div class="info-icon" aria-hidden="true">⌖</div>
+          <img
+            src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=500&q=80"
+            alt="Road through hills"
+          />
+          <div>
+            <h3>How To Reach</h3>
+            <p>Well connected by road, rail and air. Nearest airport is Chandigarh.</p>
+            <a href="#contact">Read More »</a>
+          </div>
         </article>
-        <article>
-          <span>Ideal Stay</span>
-          <strong>1 - 2 Days</strong>
+
+        <article class="info-card orange">
+          <div class="info-icon" aria-hidden="true">▣</div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Takht_keshgarh_Sahib.jpg"
+            alt="Visitors at Takht Sri Keshgarh Sahib"
+          />
+          <div>
+            <h3>Best Time To Visit</h3>
+            <p>October to March is the best time to explore Anandpur Sahib.</p>
+            <a href="#contact">Read More »</a>
+          </div>
         </article>
-        <article>
-          <span>Nearest Hub</span>
-          <strong>Chandigarh</strong>
+
+        <article class="info-card green">
+          <div class="info-icon" aria-hidden="true">▰</div>
+          <img
+            src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=500&q=80"
+            alt="Hotel room"
+          />
+          <div>
+            <h3>Where To Stay</h3>
+            <p>Find hotels, guest houses, and dharamshalas for a comfortable stay.</p>
+            <a href="#contact">Read More »</a>
+          </div>
         </article>
-        <article>
-          <span>Known For</span>
-          <strong>Khalsa Heritage</strong>
+
+        <article class="info-card purple">
+          <div class="info-icon" aria-hidden="true">♨</div>
+          <img
+            src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=500&q=80"
+            alt="Punjabi food"
+          />
+          <div>
+            <h3>Local Food</h3>
+            <p>Enjoy Punjabi cuisine and langar at the local gurdwaras.</p>
+            <a href="#contact">Read More »</a>
+          </div>
         </article>
       </section>
 
-      <section class="section intro">
+      <section class="section about" id="about">
         <div>
-          <p class="eyebrow">Why visit</p>
-          <h2>A calm, sacred, and deeply historical town</h2>
+          <p class="kicker">About Anandpur Sahib</p>
+          <h2>A sacred city with living history</h2>
         </div>
         <p>
-          Anandpur Sahib rewards slow travel. Begin with ardas at Takht Sri
-          Keshgarh Sahib, walk through the old qila sites, then spend the afternoon
-          inside Virasat-e-Khalsa's galleries. During Hola Mohalla, the town becomes
-          a powerful celebration of devotion, martial tradition, music, and sangat.
+          Anandpur Sahib is not just a city, it is an emotion for every Sikh.
+          Its gurdwaras, festivals, museums, and nearby hill views make it a
+          powerful destination for pilgrims, families, and heritage travelers.
         </p>
       </section>
 
-      <section class="section" id="places">
-        <div class="section-heading">
-          <p class="eyebrow">Places to see</p>
-          <h2>Highlights of Anandpur Sahib</h2>
+      <section class="section packages" id="packages">
+        <div class="section-title">
+          <span></span>
+          <h2>Tour Packages</h2>
+          <span></span>
         </div>
-        <div class="places-grid">
-          <article class="place-card featured">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Takht_keshgarh_Sahib.jpg"
-              alt="Takht Sri Keshgarh Sahib in Anandpur Sahib"
-            />
-            <div>
-              <span class="tag">Sacred Site</span>
-              <h3>Takht Sri Keshgarh Sahib</h3>
-              <p>
-                One of Sikhism's five takhts and the revered site associated with
-                the founding of the Khalsa by Guru Gobind Singh Ji in 1699.
-              </p>
-            </div>
+        <div class="package-grid">
+          <article>
+            <strong>1 Day Darshan</strong>
+            <p>Takht Sri Keshgarh Sahib, local gurdwaras, and Virasat-e-Khalsa.</p>
           </article>
-
-          <article class="place-card">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Virasat-e-Khalsa-Roxy.jpg"
-              alt="Virasat-e-Khalsa museum lawns and museum buildings"
-            />
-            <div>
-              <span class="tag">Museum</span>
-              <h3>Virasat-e-Khalsa</h3>
-              <p>
-                A dramatic museum complex that tells stories of Sikh heritage,
-                Punjabi culture, and the formation of the Khalsa.
-              </p>
-            </div>
+          <article>
+            <strong>2 Day Heritage Tour</strong>
+            <p>Gurdwaras, qila trail, museum visit, market time, and nearby temples.</p>
           </article>
-
-          <article class="place-card">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Kesgarh_Sahib.jpg"
-              alt="Kesgarh Sahib qila structure"
-            />
-            <div>
-              <span class="tag">Qila Trail</span>
-              <h3>Historic Qilas</h3>
-              <p>
-                Follow the memory of Anandgarh, Lohgarh, Holgarh, Fatehgarh, and
-                Taragarh, linked with Guru Gobind Singh Ji's time in the city.
-              </p>
-            </div>
+          <article>
+            <strong>Hola Mohalla Trip</strong>
+            <p>Festival planning with early arrival, stay guidance, and local movement tips.</p>
           </article>
         </div>
       </section>
 
-      <section class="section itinerary" id="itinerary">
-        <div class="section-heading">
-          <p class="eyebrow">Trip ideas</p>
-          <h2>Choose your pace</h2>
+      <section class="section gallery" id="gallery">
+        <div class="section-title">
+          <span></span>
+          <h2>Gallery</h2>
+          <span></span>
         </div>
-        <div class="tabs" role="tablist" aria-label="Itinerary duration">
-          <button class="tab active" type="button" role="tab" aria-selected="true" data-plan="one">1 Day</button>
-          <button class="tab" type="button" role="tab" aria-selected="false" data-plan="two">2 Days</button>
-          <button class="tab" type="button" role="tab" aria-selected="false" data-plan="festival">Hola Mohalla</button>
-        </div>
-        <div class="timeline" id="timeline" aria-live="polite"></div>
-      </section>
-
-      <section class="section plan" id="plan">
-        <div class="section-heading">
-          <p class="eyebrow">Travel essentials</p>
-          <h2>Plan respectfully and comfortably</h2>
-        </div>
-        <div class="plan-grid">
-          <article>
-            <h3>At Gurdwaras</h3>
-            <p>Cover your head, remove shoes, dress modestly, and keep photography rules in mind.</p>
-          </article>
-          <article>
-            <h3>Getting There</h3>
-            <p>Arrive by road from Chandigarh or Rupnagar, or use Anandpur Sahib railway station.</p>
-          </article>
-          <article>
-            <h3>Food</h3>
-            <p>Enjoy langar with sangat, then try Punjabi meals in the town market after sightseeing.</p>
-          </article>
-          <article>
-            <h3>For Families</h3>
-            <p>Start early, keep museum time unhurried, and carry water in warmer months.</p>
-          </article>
+        <div class="gallery-grid">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Takht_keshgarh_Sahib.jpg" alt="Takht Sri Keshgarh Sahib" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Virasat-e-Khalsa-Roxy.jpg" alt="Virasat-e-Khalsa" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Kesgarh_Sahib.jpg" alt="Kesgarh Sahib" />
         </div>
       </section>
 
-      <section class="contact-band" id="contact">
+      <section class="contact-panel" id="contact">
         <div>
-          <p class="eyebrow">Need help?</p>
-          <h2>Build your Anandpur Sahib travel plan</h2>
-          <p>
-            Share your travel dates and group size. This demo form shows how a local
-            tourism contact section can work on the website.
-          </p>
+          <p class="kicker">Contact Us</p>
+          <h2>Plan your Anandpur Sahib visit</h2>
+          <p>Send your date and travel style. This enquiry form is ready for your local tour guide website.</p>
         </div>
         <form class="contact-form">
           <label>
@@ -204,13 +242,38 @@
     </main>
 
     <footer class="site-footer">
-      <p>Anandpur Sahib Tourism website concept.</p>
-      <p>
-        Images via Wikimedia Commons:
-        <a href="https://commons.wikimedia.org/wiki/File:Virasat-e-Khalsa-Roxy.jpg">Virasat-e-Khalsa</a>,
-        <a href="https://commons.wikimedia.org/wiki/File:Takht_keshgarh_Sahib.jpg">Takht Keshgarh Sahib</a>,
-        <a href="https://commons.wikimedia.org/wiki/File:Kesgarh_Sahib.jpg">Kesgarh Sahib</a>.
-      </p>
+      <div>
+        <h3>About Anandpur Sahib</h3>
+        <p>
+          Anandpur Sahib is humanity, faith, courage, and the spirit of never giving up.
+        </p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#places">Places to Visit</a>
+        <a href="#packages">Tour Packages</a>
+        <a href="#gallery">Gallery</a>
+      </div>
+      <div>
+        <h3>Follow Us</h3>
+        <div class="socials" aria-label="Social links">
+          <a href="#contact">f</a>
+          <a href="#contact">ig</a>
+          <a href="#contact">▶</a>
+          <a href="#contact">wa</a>
+        </div>
+      </div>
+      <div>
+        <h3>Newsletter</h3>
+        <p>Subscribe to get travel tips and latest updates.</p>
+        <form class="newsletter">
+          <input type="email" placeholder="Enter your email" aria-label="Email address" />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+      <p class="copyright">© 2026 Anandpur Sahib Tour Guide. All Rights Reserved.</p>
     </footer>
 
     <script src="script.js"></script>
